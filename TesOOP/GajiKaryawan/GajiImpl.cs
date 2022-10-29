@@ -1,6 +1,9 @@
 ﻿using System;
 namespace TesOOP.GajiKaryawan
 {
+    /**
+     * implementasi dari blueprint Gaji
+     */
     public class GajiImpl : Gaji
     {
         private int _gajiPokok = 0;
@@ -9,6 +12,9 @@ namespace TesOOP.GajiKaryawan
 
         private Employe _karyawan = new();
 
+        /**
+         * Interface untuk digunakan main program guna mengkalkulasi gaji
+         * **/
         public override void calculate(Employe employe)
         {
             _karyawan = employe;
@@ -25,6 +31,9 @@ namespace TesOOP.GajiKaryawan
 
         }
 
+        /**
+         * Menampilkan hasil dari perhitungan gaji yang sudah didapat
+         * **/
         private void showHasil() {
 
 
@@ -47,8 +56,12 @@ namespace TesOOP.GajiKaryawan
             Console.WriteLine("TOTAL PENDAPATAN : Rp." + format(total));
         }
 
+        /**
+         * Menghitung gaji pokok berdasarkan golongan
+         * **/
         private void hitungGajiPokok()
         {
+            //cek golongan dari jabatan sang karyawan
             if (this._karyawan.golongan == "A") {
                 _gajiPokok = 1_200_000;
 
@@ -63,9 +76,17 @@ namespace TesOOP.GajiKaryawan
             }
         }
 
+        /**
+         * Menghitung tunjangan untuk anak 
+         * tunjangan hanya di dapat jika sudah menikah dan memiliki ana maksimal 2 
+         * 
+         * **/
         private void hitungTunganAnak()
         {
+
+            //apakah sudah menikah?
             if (_karyawan.sudahMenikah) {
+                //kalikan tunjangan dengan jumlah anak
                 if (_karyawan.jumlahAnak <= 2)
                 {
                     if (this._karyawan.golongan == "A")
@@ -86,6 +107,7 @@ namespace TesOOP.GajiKaryawan
 
                 }
 
+                //maksimal tunjangan untuk 2 anak
                 if (_karyawan.jumlahAnak > 2)
                 {
                     if (this._karyawan.golongan == "A")
@@ -108,9 +130,14 @@ namespace TesOOP.GajiKaryawan
             }
         }
 
+        /**
+         * Menghitung tunjangan istri dimana tunjangan ini didapatkan ketika karyawan sudah menikah
+         * **/
         private void hitungTunjanganIstri()
         {
+            //apakah sudah menikah?
             if (_karyawan.sudahMenikah) {
+                //klasifikasikan berdasarkan golongan
                 if (this._karyawan.golongan == "A")
                 {
                     _tunjanganIstri = 150_000;
@@ -129,6 +156,10 @@ namespace TesOOP.GajiKaryawan
             }
         }
 
+        /**
+         * Untuk memformat bilangan ke nominal currenct 
+         * @return misal: 1.000.000
+         * **/
         private string format(int i) {
             return String.Format("{0:#,0.00}",i);
         }

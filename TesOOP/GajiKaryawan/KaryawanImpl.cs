@@ -5,11 +5,16 @@ namespace TesOOP.GajiKaryawan
     {
         private Employe employe;
 
+        /**
+         * fungsi untuk mengumpulkan data karyawan sebelum dilakukan perhitungan
+         * **/
         public override void collectDataKaryawan()
         {
 
+            //inisisai objek ke default
             employe = new();
 
+            //collecting data
             Console.Write("Masukkan nama pegawai = ");
             employe.nama = Console.ReadLine();
 
@@ -51,6 +56,9 @@ namespace TesOOP.GajiKaryawan
             Console.WriteLine("");
         }
 
+        /**
+         * fungsi untuk mengambil data yang sudah terkumpul
+         * **/
         public override Employe getEmployee()
         {
             return this.employe;
