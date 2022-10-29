@@ -1,0 +1,15 @@
+/Users/triandamai/Projects/TesOOP/TesOOP/obj/Debug/net6.0/TesOOP.csproj.AssemblyReference.cache
+/Users/triandamai/Projects/TesOOP/TesOOP/obj/Debug/net6.0/TesOOP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/triandamai/Projects/TesOOP/TesOOP/obj/Debug/net6.0/TesOOP.AssemblyInfoInputs.cache
+/Users/triandamai/Projects/TesOOP/TesOOP/obj/Debug/net6.0/TesOOP.AssemblyInfo.cs
+/Users/triandamai/Projects/TesOOP/TesOOP/obj/Debug/net6.0/TesOOP.csproj.CoreCompileInputs.cache
+/Users/triandamai/Projects/TesOOP/TesOOP/bin/Debug/net6.0/TesOOP
+/Users/triandamai/Projects/TesOOP/TesOOP/bin/Debug/net6.0/TesOOP.deps.json
+/Users/triandamai/Projects/TesOOP/TesOOP/bin/Debug/net6.0/TesOOP.runtimeconfig.json
+/Users/triandamai/Projects/TesOOP/TesOOP/bin/Debug/net6.0/TesOOP.dll
+/Users/triandamai/Projects/TesOOP/TesOOP/bin/Debug/net6.0/TesOOP.pdb
+/Users/triandamai/Projects/TesOOP/TesOOP/obj/Debug/net6.0/TesOOP.dll
+/Users/triandamai/Projects/TesOOP/TesOOP/obj/Debug/net6.0/refint/TesOOP.dll
+/Users/triandamai/Projects/TesOOP/TesOOP/obj/Debug/net6.0/TesOOP.pdb
+/Users/triandamai/Projects/TesOOP/TesOOP/obj/Debug/net6.0/TesOOP.genruntimeconfig.cache
+/Users/triandamai/Projects/TesOOP/TesOOP/obj/Debug/net6.0/ref/TesOOP.dll
