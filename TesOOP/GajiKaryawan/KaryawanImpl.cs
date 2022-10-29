@@ -20,6 +20,7 @@ namespace TesOOP.GajiKaryawan
 
             Console.WriteLine("");
 
+            //pastikan untuk golongan yang diisi hanya A,B,C
             bool golonganFAIL = true;
             while (golonganFAIL)
             {
@@ -33,11 +34,12 @@ namespace TesOOP.GajiKaryawan
 
             Console.WriteLine("");
 
+            //pastikan yang diinput hanya Y atau N
             bool menikahFAIL = true;
             while (menikahFAIL) {
                 Console.Write("Sudah Menikah(Y/N) ? =");
                 string sudah = Console.ReadLine();
-                if(sudah == "Y" || sudah == "N") {
+                if(sudah == "Y" || sudah == "N" || sudah == "y" || sudah == "n") {
                     employe.sudahMenikah = sudah == "Y" ? true : false;
 
                     menikahFAIL = false;
